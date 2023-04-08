@@ -1,7 +1,6 @@
 import multiprocessing
 import time 
 import os
-from inspect import getmembers, isfunction
 
 gameNumber = 0
 bot1Base = """
@@ -98,6 +97,7 @@ def runGame(gameNumber):
 def main():
   global gameNumber
   writeBases()
+
   createGame(gameNumber)
   time.sleep(1)
   runGame(gameNumber)
